@@ -1,4 +1,4 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
@@ -17,11 +17,11 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ^q::Send !{F4}
 
 ; Remap Windows + Tab to Alt + Tab.
-LControl & Tab::AltTab
-^+Tab::Send ^!{Tab}
-
-WheelUp::Send {WheelDown}
-WheelDown::Send {WheelUp}
+; LControl & Tab::AltTab
+; ^+Tab::Send ^!{Tab}
+;
+;WheelUp::Send {WheelDown}
+;WheelDown::Send {WheelUp}
 
 ; Remap Fullscreen
 ^!m::WinMaximize, A  ; Assign a hotkey to maximize the active window.
@@ -72,10 +72,6 @@ SetTitleMatchMode, 2
 ; Delete File
 ^BS::Send {Del}
 RWin & BS::Send {Del}
-
-; Navigate Children / Parents
-^Up::Send !{Up}
-^Down::Send {ENTER}
 
 ; Open File
 ^O::Send {Enter}
