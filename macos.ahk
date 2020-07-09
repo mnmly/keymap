@@ -23,6 +23,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;WheelUp::Send {WheelDown}
 ;WheelDown::Send {WheelUp}
 
+; Take Screenshot
+^+4::Send #+S
+
 ; Remap Fullscreen
 ^!m::WinMaximize, A  ; Assign a hotkey to maximize the active window.
 ^!c::CenterWindow("A")
