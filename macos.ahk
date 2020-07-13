@@ -23,6 +23,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ;WheelUp::Send {WheelDown}
 ;WheelDown::Send {WheelUp}
 
+; Change Volumes
+
+^F12::Volume_Up
+^F11::Volume_Down
+^F10::Volume_Mute
+
 ; Take Screenshot
 ^+4::Send #+S
 
